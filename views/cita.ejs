@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>CRUD de Citas</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Gestión de Citas</h1>
+        </div>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Crear/Editar Cita</h2>
+            <form id="appointment-form">
+                <label for="nombre_mascota">Nombre de la Mascota:</label>
+                <input type="text" id="nombre_mascota" name="nombre_mascota" required>
+                
+                <label for="nombre_dueno">Nombre del Dueño:</label>
+                <input type="text" id="nombre_dueno" name="nombre_dueno" required>
+                
+                <label for="fecha_cita">Fecha de la Cita:</label>
+                <input type="date" id="fecha_cita" name="fecha_cita" required>
+                
+                <label for="servicio">Servicio:</label>
+                <select id="servicio" name="servicio" required>
+                    <option value="spa">Paquete spa</option>
+                    <option value="nail-trim">Corte de Uñas</option>
+                    <option value="ear-cleaning">Limpieza de Oídos</option>
+                </select>
+                
+                <button type="submit">Guardar Cita</button>
+            </form>
+        </section>
+        <section class="appointments-list">
+            <h2>Lista de Citas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre de la Mascota</th>
+                        <th>Nombre del Dueño</th>
+                        <th>Fecha</th>
+                        <th>Servicio</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="appointments-table-body">
+                    <!-- Aquí se agregarán las citas dinámicamente -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>© 2024 Gestión de Citas. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="\app.js"></script>
+</body>
+</html>

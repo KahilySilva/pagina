@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    
+    
+    <% if (login) { %>
+      
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">Winni</a>
+            <div>
+                <a class="nav-link active" href="logout">Cerrar Sesión</a>
+                <a class="nav-link" href="cita">Citas</a>
+               
+                
+                <h3>Bienvenido: <strong><%= name %></strong></h3>
+            </div>
+        </nav>
+
+    <% } else { %>
+
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">Winni</a>
+            <div>
+                <a class="nav-link active" href="login">Inicia Sesión</a>
+                <a class="nav-link" href="cita">Citas</a>
+               
+                <h3>Bienvenido: <strong><%= name %></strong></h3>
+            </div>
+        </nav>
+
+    <% } %>
+
+    <div class="logo">
+        <img src="/imag/inicio.webp" alt="Hospital Veterinario Borges">
+    </div>
+</head>
+
+<body>
+
+    <div class="title-cards">
+        <h2>Servicios que Ofrecemos</h2>
+    </div>
+
+    <div class="container-card">
+        <div class="card">
+            <figure>
+                <img src="/imag/una.jpg" alt="Corte de uñas">
+            </figure>
+            <div class="contenido-card">
+                <h3>Corte de uñas</h3>
+                <p>Mantén las uñas de tu mascota saludables con nuestro servicio de corte profesional. 
+                    Ofrecemos corte seguro, prevención de uñas encarnadas y mejora del bienestar.</p>
+                <a href="#">Leer Más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="/imag/bano.jpg" alt="SPA">
+            </figure>
+            <div class="contenido-card">
+                <h3>SPA</h3>
+                <p>Los servicios de spa para perritos incluyen baños con aromaterapia, cortes de pelo estilizados y adaptados a las necesidades específicas de cada animal.</p>
+                <a href="#">Leer Más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="/imag/oido.jpg" alt="Limpieza de oídos">
+            </figure>
+            <div class="contenido-card">
+                <h3>Limpieza de oídos</h3>
+                <p>Eliminamos cerumen y suciedad, manteniendo sus oídos sanos y libres de infecciones.</p>
+                <a href="#">Leer Más</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

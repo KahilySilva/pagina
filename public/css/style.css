@@ -1,0 +1,330 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #fff8dc; /* Fondo amarillo claro */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.winni-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-family: 'Times New Roman', Times, serif;
+  color: gold;
+  font-size: 24px;
+}
+
+/* Login form */
+.login-form, .contenedor {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login-form h1 {
+  text-align: center;
+  color: #daa520; /* Dorado oscuro */
+  font-size: 28px;
+  padding: 70px 0 10px 0;
+}
+
+.login-form input[type="password"],
+.login-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos boton LOGIN */
+.btn-login {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffd700; /* Dorado */
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+}
+
+.btn-login:hover, .btn-login:active {
+  color: #fff;
+  background-color: #daa520; /* Dorado oscuro */
+  border-color: #daa520;
+}
+
+.btn-login:focus {
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25); /* Dorado */
+}
+
+/* Estilos boton REGISTER */
+.btn-register {
+  width: 100%;
+  padding: 15px;
+  background-color: #ffd700; /* Dorado */
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #ffffff;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.btn-register:hover, .btn-register:active {
+  color: #fff;
+  background-color: #daa520; /* Dorado oscuro */
+  border-color: #daa520;
+}
+
+.btn-register:focus {
+  box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.25); /* Dorado */
+}
+
+/* Estilos de link para ir a LOGIN */
+.a-login:link, .a-login:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #daa520; /* Dorado oscuro */
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a-login:hover, .a-login:active {
+  background-color: #daa520; /* Dorado oscuro */
+  color: white;
+}
+
+/* Estilos de link para realizar el LOGOUT */
+.a-logout:link, .a-logout:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid #f87171;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.a-logout:hover, .a-logout:active {
+  background-color: #f87171;
+  color: white;
+}
+
+/* Estilos boton CANCELAR */
+.btn-cancel {
+  width: 50%;
+  padding: 15px;
+  background-color: #9ca3af;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.btn-cancel:hover, .btn-cancel:active {
+  color: #fff;
+  background-color: #6b7280;
+  border-color: #6b7280;
+}
+
+.btn-cancel:focus {
+  box-shadow: 0 0 0 3px #6b7280;
+}
+
+/* Estilos boton GUARDAR */
+.btn-save {
+  width: 50%;
+  padding: 15px;
+  background-color: #1d4ed8;
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: medium;
+  color: #ffffff;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.btn-save:hover, .btn-save:active {
+  color: #fff;
+  background-color: #1e3a8a;
+  border-color: #1e3a8a;
+}
+
+.btn-save:focus {
+  box-shadow: 0 0 0 3px #1e3a8a;
+}
+
+/* form User Registration */
+.register-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 0px 20px 60px 20px;
+  margin-top: 35px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left !important;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.register-form h1 {
+  text-align: left;
+  color: #daa520; /* Dorado oscuro */
+  font-size: 22px;
+  padding: 70px 0 10px 0;
+}
+
+.register-form input[type="password"],
+.register-form input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ced4da;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el select dropdown */
+.select-css {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+  padding: .4em 1.4em .3em .8em;
+  width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #fffacd; /* Amarillo pálido */
+}
+
+.select-css::-ms-expand {
+  display: none;
+}
+
+.select-css:hover {
+  border-color: #888;
+}
+
+.select-css:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+  box-shadow: 0 0 0 3px -moz-mac-focusring;
+  color: #222;
+  outline: none;
+}
+
+.select-css option {
+  font-weight: normal;
+}
+
+/* Cards */
+.title-cards {
+  margin-top: -100px; /* Mueve el título hacia arriba */
+}
+
+.container-card {
+  width: 100%;
+  display: flex;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  flex: 1; /* Utiliza todo el espacio disponible */
+  margin: 0 10px; /* Ajusta el margen izquierdo y derecho de las tarjetas */
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  transition: all 400ms ease-out;
+  cursor: default;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3%);
+}
+
+.card img {
+  width: 100%;
+  height: 210px;
+}
+
+.card .contenido-card {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .contenido-card h3 {
+  margin-bottom: 15px;
+  color: #daa520; /* Dorado oscuro */
+}
+
+.card .contenido-card p {
+  line-height: 1.8;
+  color: #6a6a6a;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: #2fb4cc;
+  border: 1px solid #2fb4cc;
+  border-radius: 4px;
+  transition: all 400ms ease;
+  margin-bottom: 5px;
+}
+
+.card .contenido-card a:hover {
+  background: #2fb4cc;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .container-card {
+      flex-wrap: wrap;
+  }
+
+  .card {
+      margin: 15px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .card {
+      width: calc(50% - 20px); /* Tamaño de las tarjetas en pantallas más pequeñas */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+      width: calc(100% - 20px); /* Tamaño de las tarjetas en dispositivos móviles */
+  }
+}
+
+/* Imagen index */
+.logo {
+  height: 20%;
+  width: 100%;
+  display: flex;
+}
+
+.logo img {
+  width: 100%;
+  display: flex;}
