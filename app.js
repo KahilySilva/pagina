@@ -131,6 +131,8 @@ app.get('/logout', function (req, res) {
     });
 });
 
-app.listen(3000, (req, res) => {
-    console.log('SERVER RUNNING IN http://localhost:3000');
+// Configuración del servidor para Railway
+const port = process.env.PORT || 3000;
+app.listen(port, '0.0.0.0', () => {
+    console.log(`SERVER RUNNING IN http://localhost:${port}`);
 });
