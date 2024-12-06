@@ -1,24 +1,16 @@
 const mysql = require('mysql');
-const dotenv = require('dotenv');
 
-// Configuración de dotenv
-dotenv.config({ path: './env/.env' });
-
-// Configuración de la conexión
 const connection = mysql.createConnection({
-  host: process.env.MYSQLHOST,
-  user: process.env.MYSQLUSER,
-  password: process.env.MYSQLPASSWORD,
-  database: process.env.MYSQLDATABASE
+  host: 'localhost',        // MySQL host (change if using remote DB)
+  user: 'root',     // The MySQL username
+  password: 'Mabel123', // The MySQL password
+  database: 'grooming'  // The database name you're connecting to
 });
 
-// Intentar conectar a la base de datos
-connection.connect((err) => {
+connection.connect(function(err) {
   if (err) {
-    console.error('Error connecting to the database:', err);
-    process.exit(1);
-  } else {
-    console.log('Connected to the database successfully!');
-    process.exit(0);
+    console.error('Error connecting to the database:', err.stack);
+    return;
   }
+  console.log('Connected to the database as ID ' + connection.threadId);
 });
